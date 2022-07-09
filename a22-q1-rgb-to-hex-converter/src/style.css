@@ -1,0 +1,121 @@
+/* CSS */
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+/* input range 主體樣式 */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 200px;
+  background: none; // 清除不必要的東西
+  outline: none; // 清除不必要的東西
+  border-radius: 0; // 清除不必要的東西
+  overflow: hidden;
+  cursor: pointer;
+}
+/* 滑動軌道 樣式 */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  width: 180px;
+  border-radius: 4px;
+  background-color: #aaa;
+}
+/* 滑動鈕 樣式 */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-:hover {
+    transform: scale(1.5);
+  }
+  position: relative;
+  height: 16px;
+  width: 16px;
+  margin-top: -5px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.5);
+}
+
+main {
+  position: relative;
+}
+.R {
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: -33px;
+  padding: 5px 10px;
+  background-color: red;
+  border-radius: 5px;
+  outline: 1px solid;
+}
+.r {
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  background-color: red;
+  border-radius: 5px;
+  width: 50px;
+  height: 25px;
+  padding-top: 5px;
+  text-align: center;
+  outline: 1px solid;
+}
+.G {
+  font-weight: bold;
+  position: absolute;
+  top: 55px;
+  left: -33px;
+  padding: 5px 10px;
+  background-color: #80ff00;
+  border-radius: 5px;
+  outline: 1px solid;
+}
+.g {
+  font-weight: bold;
+  position: absolute;
+  top: 55px;
+  background-color: #80ff00;
+  border-radius: 5px;
+  width: 50px;
+  height: 25px;
+  padding-top: 5px;
+  text-align: center;
+  outline: 1px solid;
+}
+.B {
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+  left: -33px;
+  padding: 5px 10px;
+  background-color: #0d33ff;
+  border-radius: 5px;
+  outline: 1px solid;
+}
+.b {
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+  background-color: #0d33ff;
+  border-radius: 5px;
+  width: 50px;
+  height: 25px;
+  padding-top: 5px;
+  text-align: center;
+  outline: 1px solid;
+}
+.output {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+}
